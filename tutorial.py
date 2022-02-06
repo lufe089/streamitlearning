@@ -83,4 +83,5 @@ def main():
     # Map con sliders
     plot_map_by_time(data)
 
-
+# LLamado al main
+main()
