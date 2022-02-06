@@ -80,8 +80,11 @@ def main():
     draw_histogram(data)
     plot_map(data)
 
-    # Map con sliders
+    # Map con filtro de fechas
     plot_map_by_time(data)
+         
+    # Map con sliders
+    plot_map_by_time_slider(data)
 
 # LLamado al main
 main()
