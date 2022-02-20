@@ -64,6 +64,15 @@ def plot_map_by_time_slider(data):
     st.subheader(f'FILTERED: Map of all pickups at {hour_to_filter}:00')
     st.map(filtered_data)
 
+def plot_line_chart(data):
+     chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+     st.line_chart(chart_data)
+
+
+
+st.line_chart(chart_data)
 
 # Main function
 def main():
@@ -80,10 +89,12 @@ def main():
     plot_map(data)
 
     # Map con filtro de fechas
-    plot_map_by_time(data)
+    #plot_map_by_time(data)
          
     # Map con sliders
-    plot_map_by_time_slider(data)
+    #plot_map_by_time_slider(data)
+         
+    plot_line_chart(data)
 
 # LLamado al main
 main()
