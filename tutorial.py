@@ -70,10 +70,6 @@ def plot_line_chart(data):
      columns=['a', 'b', 'c'])
      st.line_chart(chart_data)
 
-
-
-st.line_chart(chart_data)
-
 # Main function
 def main():
     # Create a text element and let the reader know the data is loading.
